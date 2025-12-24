@@ -1,4 +1,7 @@
-# ცՐυ੮คՆ Բ૦Ո੮ ૭૯Ո૯Րค੮૦Ր (**Vanilla JS**)
+
+<img width="1536" height="1024" alt="brutal-font-generator" src="https://github.com/user-attachments/assets/399d778d-2677-455a-935f-3bdc2c6d1fe0" />
+
+---
 
 [![Vanilla JS](https://img.shields.io/badge/vanilla-js-f7df1e?logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Deploy](https://img.shields.io/badge/deploy-vercel-000?logo=vercel&logoColor=fff)](https://brutal-font-generator.vercel.app/)
