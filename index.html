@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>ცՐυ੮คՆ Բ૦Ո੮ ૭૯Ո૯Րค੮૦Ր</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">A</div>
+          <div>
+            <div class="brand-title">ცՐυ੮คՆ Բ૦Ո੮ ૭૯Ո૯Րค੮૦Ր</div>
+            <div class="brand-subtitle">Preview text in multiple unicode/ASCII styles</div>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn" id="clearAllBtn" type="button" title="Reset everything">Reset</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="panel">
+        <div class="panel-title">Input</div>
+
+        <label class="label" for="inputText">Text to convert</label>
+        <textarea
+          id="inputText"
+          rows="3"
+          spellcheck="false"
+          placeholder="Type here…"
+        ></textarea>
+
+        <div class="controls">
+          <div class="control">
+            <label class="label" for="searchQuery">Search fonts</label>
+            <input id="searchQuery" type="text" placeholder="name / id / style…" />
+          </div>
+
+          <div class="control">
+            <label class="label" for="styleFilter">Style</label>
+            <select id="styleFilter"></select>
+          </div>
+
+          <div class="control">
+            <label class="label" for="fontJump">Font</label>
+            <select id="fontJump"></select>
+          </div>
+
+          <div class="control">
+            <label class="label" for="decoratorSelect">Decorator</label>
+            <select id="decoratorSelect"></select>
+          </div>
+
+          <div class="control row">
+            <label class="check">
+              <input id="favOnly" type="checkbox" />
+              <span>Favorites only</span>
+            </label>
+
+            <div class="spacer"></div>
+
+            <label class="label" for="pageSize">Show</label>
+            <select id="pageSize" class="small">
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title row">
+          <div>Results</div>
+          <div class="spacer"></div>
+          <div class="meta" id="resultsMeta">—</div>
+        </div>
+
+        <div id="results" class="grid" aria-live="polite"></div>
+
+        <div class="row footer-row">
+          <div class="spacer"></div>
+          <button class="btn primary" id="loadMoreBtn" type="button">Load more</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="toastHost" class="toast-host" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
